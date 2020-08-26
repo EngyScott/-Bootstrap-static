@@ -18,7 +18,7 @@
 <body>
     <nav class='navbar navbar-dark navbar-expand-sm bg-primary fixed-top'>
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a href="#" class="navbar-brand"><img src="img/logo.png" alt="Ristorante Con Fusion" height="30" width="41"></a>
@@ -105,8 +105,18 @@
                     <div class="card-body">
                         <form>
                             <div class="form-group row">
-                                <label for="guests" class='col-md-2 col-form-label'>Number of Guests</label>
-                                <div class="col-md-10">
+                                <div class="form-group row">
+                                    <label for="first-name" class='col-12 col-md-3 col-form-label'>First Name</label>
+                                    <div class="col-md-3">
+                                        <input type="text" class='form-control' id="first-name" name="first-name" placeholder="Adam"/>
+                                    </div>
+                                    <label for="last-name" class='col-12 col-md-3 col-form-label'>Last Name</label>
+                                    <div class="col-md-3">
+                                        <input type="text" class='form-control' id="last-name" name="last-name" placeholder="Sandler"/>
+                                    </div>
+                                </div>
+                                <label for="guests" class='col-md-3 col-form-label'>Number of Guests</label>
+                                <div class="col-md-9">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name='guestsnum' id="guests1" value="1">
                                         <label class="form-check-label" for="guests1">1</label>
@@ -134,7 +144,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="date" class='col-12 col-md-2 col-form-label'>Date and Time</label>
+                                <label for="date" class='col-12 col-md-3 col-form-label'>Date and Time</label>
                                 <div class="col-md-4">
                                     <input type="date" class='form-control' id="date" name="date" placeholder="Date"/>
                                 </div>
@@ -143,7 +153,13 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <div class="col-md-10 offset-md-2">
+                                <label for="special" class='col-12 col-md-3 col-form-label'>Special Requirements</label>
+                                <div class="col">
+                                    <textarea type="text" class='form-control' id="special" name="special" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-10 offset-md-3">
                                     <button type="submit" class="btn btn-primary">Reserve</button>
                                 </div>
                             </div>
