@@ -5,6 +5,16 @@ body{
     background-color: #512da8 !important;
 }
 
+.tab-content{
+    /* border-left: 1px solid #ddd; */
+    /* border-right: 1px solid #ddd; */
+    /* border-bottom: 1px solid #ddd; */
+    padding: 1em;
+}
+h2{
+    margin-bottom: 1em;
+}
+
 .row-header{
     margin: 0px auto;
     padding: 0px auto;
