@@ -40,6 +40,29 @@ h2{
     color: floralwhite
 }
 
+h2.card-header{
+    padding-left: 1em;
+}
+
+div.card-body{
+    padding: 2em 3em 1em 3em;
+}
+
+div.carousel{
+    background-color: #512da8;
+}
+
+.carousel-item{
+    height: 40vh;
+}
+
+.carousel-item img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 40vh;
+}
+
 .address{
     font-size: 80%;
     margin: 0px;
