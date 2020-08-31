@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- NAVBAR START -->
     <nav class='navbar navbar-dark navbar-expand-sm bg-primary fixed-top'>
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,6 +38,8 @@
             </div>
         </div>
     </nav>
+    <!-- NAVBAR END -->
+                                                    <!-- LOGIN MODAL -->
     <div class="modal fade" id='loginModal' role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -79,28 +82,8 @@
             </div>
         </div>
     </div>
-    <header class="jumbotron">
-        <div class='container'>
-            <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-                </div>
-                <div class="col-12 col-sm-6 align-self-center d-sm-flex align-items-center">
-                    <div class="col">
-                        <img src="img/logo.png" alt="Ristorante Con Fusion" class='img-fluid'>
-                    </div>
-                    <div class="col">
-                        <a type="button" role='button' class="btn btn-warning btn-lg btn-block float-right"
-                        data-toggle="modal" data-target="#reserveModal"
-                        >Reserve Table</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="modal fade" id='reserveModal' role="dialog">
+                                                <!-- RESERVATION MODAL -->
+    <div class="modal fade" tabindex="-1" id='reserveModal' role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
@@ -112,24 +95,24 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-row">
-                            <div class="col col-md-2">
+                            <div class="col-12 col-md-2">
                                 <label for="lastName" class='col-form-label'>Last Name</label>
                             </div>
-                            <div class="col col-md-4">
+                            <div class="col-12 col-md-4">
                                 <input type="text" class='form-control' id="lastName" name="lastName" placeholder="Smith"/>
                             </div>
-                            <div class="col col-md-2">
+                            <div class="col-12 col-md-2">
                                 <label for="firstName" class='col-form-label'>First Name</label>
                             </div>
-                            <div class="col col-md-4">
+                            <div class="col-12 col-md-4">
                                 <input type="text" class='form-control' id="firstName" name="lastName" placeholder="Will"/>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col col-md-2">
+                            <div class="col-12 col-md-2">
                                 <label for="guests" class='col-form-label'>Number of Guests</label>
                             </div>
-                            <div class="col col-md-auto">
+                            <div class="col-12 col-md-auto">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name='guestsnum' id="guests1" value="1">
                                     <label class="form-check-label" for="guests1">1</label>
@@ -157,8 +140,8 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col col-md-2">Section</div>
-                            <div class="col col-md-auto">
+                            <div class="col12 col-md-2">Section</div>
+                            <div class="col12 col-md-auto">
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                     <label class="btn btn-success active">
                                       <input type="radio" name="options" id="option1" value="nosmoke" checked>Non-Smoking
@@ -170,22 +153,21 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col col-md-2">
+                            <div class="col-12 col-md-2">
                                 <label for="firstName" class='col-form-label'>Date and Time</label>
                             </div>
-                            <div class="col col-md-5">
+                            <div class="col-6 col-md-5">
                                 <input type="date" class='form-control' id="date" name="date"/>
                             </div>
-                            <div class="col col-md-5">
+                            <div class="col-6 col-md-5">
                                 <input type="time" class='form-control' id="time" name="time"/>
                             </div>
                         </div>
-                        
                         <div class="form-row justify-content-center">
-                            <div class="col-2 co-md-3">
+                            <div class="col-3">
                                 <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Close</button>
                             </div>
-                            <div class="col-2 co-md-3">
+                            <div class="col-3">
                                 <button type="submit" class="btn btn-primary btn-block" ml-2>Reserve</button>
                             </div>
                         </div>
@@ -194,8 +176,32 @@
             </div>
         </div>
     </div>
-
+    <!-- END OF RESERVATION MODAL -->
+    <!-- JUMBOTRON -->
+    <header class="jumbotron">
+        <div class='container'>
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>Ristorante con Fusion</h1>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                </div>
+                <div class="col-12 col-sm-6 align-self-center d-sm-flex align-items-center">
+                    <div class="col">
+                        <img src="img/logo.png" alt="Ristorante Con Fusion" class='img-fluid'>
+                    </div>
+                    <div class="col">
+                        <a type="button" role='button' class="btn btn-warning btn-lg btn-block float-right"
+                        data-toggle="modal" data-target="#reserveModal"
+                        >Reserve Table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+                                                    <!-- END OF JUMBOTRON -->
+                                                    <!-- MAIN CONTENT -->  
     <div class='container'>
+                                                    <!-- CAROUSEL START -->
         <div class="row-content">
             <div class="col">
                 <div id="firstCarousel" class="carousel slide" data-ride="carousel">
@@ -234,9 +240,16 @@
                     <a class="carousel-control-next" href="#firstCarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
+                    <div class="btn-group" id='carouselButtons'>
+                        <button class="btn btn-danger btn-sm" id="carousel-pause"><span class="fa fa-pause"></span></button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play"><span class="fa fa-play"></span></button>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- CAROUSEL END -->
+        <!-- BODY CONTENT -->
+        <!-- ROW 1 -->
         <div class='row row-content align-items-center'>
             <div class="col-12 col-sm-4 order-sm-last col-md-4">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -251,8 +264,7 @@
                 </div>
             </div>
         </div>
-
-
+        <!-- ROW 2 -->
         <div class='row row-content align-items-center'>
             <div class="col-12 col-sm-4 col-md-4">
                 <h3>This Month's Promotions</h3>
@@ -267,7 +279,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- ROW 3 -->
         <div class='row row-content align-items-center'>
             <div class="col-12 col-sm-4 order-sm-last col-md-4">
                 <h3>Meet our Culinary Specialists</h3>
@@ -283,6 +295,7 @@
                 </div>
             </div>
         </div>
+        <!-- RESERVATION FORM START -->
         <div id="reserve" class='row row-content align-items-center'>
             <div class="col-12 col-sm-8 offset-sm-2">
                 <div class="card">
@@ -387,8 +400,10 @@
                 </div>
             </div>
         </div>
+        <!-- RESERVATION FORM END -->
     </div>
-
+<!-- END OF BODY -->
+<!-- FOOTER START -->
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -430,11 +445,25 @@
            </div>
         </div>
     </footer>
-
+<!-- FOOTER END -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $('document').ready(function(){
+            $('#reserveModal').on('shown.bs.modal', function () {
+                $('#lastName').trigger('focus')
+            });
+            $('#firstCarousel').carousel({interval:2000});
+            $('#carousel-pause').click(function(){
+                $('#firstCarousel').carousel('pause')
+            });
+            $('#carousel-play').click(function(){
+                $('#firstCarousel').carousel('cycle')
+            });
+        })
+    </script>
 </body>
 
 </html>

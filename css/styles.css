@@ -53,14 +53,21 @@ div.carousel{
 }
 
 .carousel-item{
-    height: 40vh;
+    height: 45vh;
 }
 
 .carousel-item img{
     position: absolute;
     left: 0;
     top: 0;
-    min-height: 40vh;
+    min-height: 45vh;
+}
+
+#carouselButtons{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .address{
