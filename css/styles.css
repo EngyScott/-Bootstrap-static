@@ -63,7 +63,7 @@ div.carousel{
     min-height: 45vh;
 }
 
-#carouselButtons{
+#carouselButton{
     position: absolute;
     bottom: 0;
     right: 0;
