@@ -1,0 +1,77 @@
+body{
+    padding: 50px 0 0 0;
+}
+.navbar-dark{
+    background-color: #512da8 !important;
+}
+
+.tab-content{
+    /* border-left: 1px solid #ddd; */
+    /* border-right: 1px solid #ddd; */
+    /* border-bottom: 1px solid #ddd; */
+    padding: 1em;
+}
+h2{
+    margin-bottom: 1em;
+}
+
+.row-header{
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.row-content{
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.footer{
+    background-color: #d1c9e9;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.jumbotron{
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background-color: #9575cd;
+    color: floralwhite
+}
+
+h2.card-header{
+    padding-left: 1em;
+}
+
+div.card-body{
+    padding: 2em 3em 1em 3em;
+}
+
+div.carousel{
+    background-color: #512da8;
+}
+
+.carousel-item{
+    height: 45vh;
+}
+
+.carousel-item img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 45vh;
+}
+
+#carouselButton{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.address{
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
